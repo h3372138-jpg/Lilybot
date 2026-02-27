@@ -14,7 +14,7 @@ logging.basicConfig(
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [["📌 About Bot", "📞 Contact"]]
     reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
-    await update.message.reply_text(
+    await update.message.reply_tt(
         "👋 Welcome to your professional Telegram Bot!",
         reply_markup=reply_markup
     )
